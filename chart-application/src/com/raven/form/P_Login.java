@@ -1,6 +1,5 @@
 package com.raven.form;
 
-import com.formdev.flatlaf.FlatClientProperties;
 import com.raven.event.PublicEvent;
 import com.raven.model.Model_Login;
 
@@ -8,10 +7,6 @@ public class P_Login extends javax.swing.JPanel {
 
     public P_Login() {
         initComponents();
-        lbTitle.putClientProperty(FlatClientProperties.STYLE, ""
-                + "font:+17;");
-        cmdRegister.putClientProperty(FlatClientProperties.STYLE, ""
-                + "font:-2;");
     }
 
     @SuppressWarnings("unchecked")
@@ -28,17 +23,14 @@ public class P_Login extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
+        lbTitle.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
         lbTitle.setForeground(new java.awt.Color(87, 87, 87));
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbTitle.setText("Login");
 
         jLabel1.setText("User Name");
 
-        txtUser.setText("raven");
-
         jLabel2.setText("Password");
-
-        txtPass.setText("123");
 
         cmdLogin.setText("Login");
         cmdLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -47,6 +39,7 @@ public class P_Login extends javax.swing.JPanel {
             }
         });
 
+        cmdRegister.setFont(new java.awt.Font("sansserif", 0, 11)); // NOI18N
         cmdRegister.setForeground(new java.awt.Color(15, 128, 206));
         cmdRegister.setText("Register");
         cmdRegister.setContentAreaFilled(false);
@@ -90,7 +83,7 @@ public class P_Login extends javax.swing.JPanel {
                 .addComponent(cmdLogin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cmdRegister)
-                .addGap(0, 108, Short.MAX_VALUE))
+                .addGap(0, 86, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

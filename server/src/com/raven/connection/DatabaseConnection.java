@@ -21,7 +21,7 @@ public class DatabaseConnection {
 
     public void connectToDatabase() throws SQLException {
         String server = "localhost";
-        String port = "3306";
+        String port = "3305";
         String database = "chat_application";
         String userName = "raven";
         String password = "123";
